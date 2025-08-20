@@ -1,0 +1,100 @@
+.product-information {
+    padding: 50px 0;
+    &__title {
+        font-family: 'NeueFrutigerWorld-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 150%;
+        color: $textColorBlack;
+        margin-bottom: 50px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__item {
+        width: 45%;
+        &-title {
+            font-family: 'NeueFrutigerWorld-Bold', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            color: $textColorBlack;
+            margin-bottom: 32px
+        }
+        &-descr, &-hide {
+            font-family: 'NeueFrutigerWorld-Regular', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $textColorBlack;
+        }
+        &-hide {
+            display: none;
+        }
+        &-next {
+            background-color: $textColorWhite;
+            color: $mainColor;
+            position: relative;
+            height: 50px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                width: 12px;
+                height: 2px;
+                background-color: $mainColor;
+                transform: translate(-50%, -50%);
+            }
+             &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                width: 12px;
+                height: 2px;
+                background-color: $mainColor;
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }
+    }
+    &__list {
+        width: 100%;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-bottom: 22px;
+            gap: 20px;
+        }  
+        &-descr {
+            font-family: 'NeueFrutigerWorld-Regular', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $textColorBlack;
+            width: 80%;
+        }   
+        &-check {
+            width: 18px;
+            height: 18px;
+            background-color: $mainColor;
+            border-radius: 100%;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: 4px;
+                width: 5px;
+                height: 8px;
+                border: solid white; /* Цвет галочки */
+                border-width: 0 2px 2px 0; /* Как формировать линию галочки */
+                transform: rotate(45deg); /* Поворот линии */
+            }
+        }   
+    }
+}

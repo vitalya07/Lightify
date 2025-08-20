@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Ledinaire high wattage floodlight</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input">
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input">
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance performance-hide">
+            <div class="performance__dialog">
+                <div class="performance__content">
+                    <div class="performance__head">
+                        <h2 class="performance__title">Характеристики продукта</h2>
+                        <p class="performance__descr">Найти подходящие светильники для различных планов, потребностей и бюджетов легко благодаря обширному портфолио Philips. Оно гарантирует, что у вас всегда будет качественное решение по желаемой цене.</p>
+                        <div class="performance__close"></div>
+                    </div>
+                    <div class="performance__wrapper">
+                        <!-- 1 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Ценность</h3>
+                            <div class="performance__item-content">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Основной ассортимент надежных продуктов</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">50,000 L80</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Эффективность</h3>
+                            <div class="performance__item-content green">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L70</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                         <!-- 3 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Спецификация</h3>
+                            <div class="performance__item-content blue">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L90</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="#" class="header__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="header__contacts-link">mail@mail.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="head">
+                <div class="container">
+                    <h1 class="head__title title">Ledinaire high wattage floodlight</h1>
+                    <p class="head__descr descr">Доверительная производительность. Каждый день.</p>
+                    <div class="head__wrapper">
+                        <button class="head__spec green-bg">
+                            <h5 class="head__spec-text">Спецификация</h5>                          
+                            <img src="assets/icons/alert.svg" alt="Предупреждение" loading="lazy" class="head__spec-img">                            
+                        </button>
+                        <div class="head__img">
+                            <img src="assets/icons/led.webp" alt="led" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-slider">
+                <div class="container">
+                    <div class="product-slider__wrapper">
+                        <div class="product-slider__slider">                            
+                            <div class="splide product-slider__slider-big" id="main-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-BSP-slide01.webp" data-caption="BVP166-BSP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-BSP-slide01.webp" alt="BVP166-BSP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/PHL-Ledianaire-Floodlight-PUP-slide02.webp" data-caption="PHL-Ledianaire-Floodlight-PUP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/PHL-Ledianaire-Floodlight-PUP-slide02.webp" alt="PHL-Ledianaire-Floodlight-PUP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-400W-Backside-DPP-slide03.webp" data-caption="BVP166-LED300-840-PSU-400W-Backside-DPP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-400W-Backside-DPP-slide03.webp" alt="BVP166-LED300-840-PSU-400W-Backside-DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-500W-Backside-DPP-slide04.webp" data-caption="BVP166-LED300-840-PSU-500W-Backside-DPP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-500W-Backside-DPP-slide04.webp" alt="BVP166-LED300-840-PSU-500W-Backside-DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-Detail-Hinge-DDP-slide05.webp" data-caption="BVP166-Detail-Hinge-DDP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-Detail-Hinge-DDP-slide05.webp" alt="BVP166-Detail-Hinge-DDP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-300W-Backside-DPP-slide06.webp" data-caption="BVP166-LED300-840-PSU-300W-Backside-DPP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-300W-Backside-DPP-slide06.webp" alt="BVP166-LED300-840-PSU-300W-Backside-DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-250W-Backside-DPP-slide07.webp" data-caption="BVP166-LED300-840-PSU-250W-Backside-DPP">
+                                                    <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-250W-Backside-DPP-slide07.webp" alt="BVP166-LED300-840-PSU-250W-Backside-DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>                                                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="splide" id="thumbnail-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-BSP-slide01.webp" alt="BVP166-BSP" loading="lazy">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/PHL-Ledianaire-Floodlight-PUP-slide02.webp" alt="PHL-Ledianaire-Floodlight-PUP" loading="lazy">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-400W-Backside-DPP-slide03.webp" alt="BVP166-LED300-840-PSU-400W-Backside-DPP" loading="lazy">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-500W-Backside-DPP-slide04.webp" alt="BVP166-LED300-840-PSU-500W-Backside-DPP" loading="lazy">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-Detail-Hinge-DDP-slide05.webp" alt="BVP166-Detail-Hinge-DDP" loading="lazy">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-300W-Backside-DPP-slide06.webp" alt="BVP166-LED300-840-PSU-300W-Backside-DPP">
+                                        </li>
+                                        <li class="splide__slide">
+                                           <img src="assets/img/ledinaire-high-wattage-floodlight/BVP166-LED300-840-PSU-250W-Backside-DPP-slide07.webp" alt="BVP166-LED300-840-PSU-250W-Backside-DPP">
+                                        </li>                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider__specifications">
+                            <table class="product-slider__specifications-table specifications-table">
+                                <thead class="specifications-table__header">
+                                    <tr class="specifications-table__head">
+                                        <th>Основная информация</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="specifications-table__content">
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Включенный драйвер</td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код семейства ламп: </td>
+                                        <td class="specifications-table__item">-</td>
+                                    </tr>
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>    
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Световые характеристики</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Распространение светового потока светильника: </td>
+                                        <td class="specifications-table__item">110°</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет источника света: </td>
+                                        <td class="specifications-table__item">840 нейтральный белый</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Коррелированная цветовая температура (номинальная): </td>
+                                        <td class="specifications-table__item"> 4000 K</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Индекс цветопередачи (CRI): </td>
+                                        <td class="specifications-table__item">>80</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тип оптики:  </td>
+                                        <td class="specifications-table__item">наружная симметричная</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Коэффициент выхода света вверх:</td>
+                                        <td class="specifications-table__item">0</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>                                    
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Управление и диммирование</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Диммируемый: </td>
+                                        <td class="specifications-table__item">Нет</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Механические и корпусные характеристики</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тип оптического покрытия: </td>
+                                        <td class="specifications-table__item">Плоское стекло</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет корпуса: </td>
+                                        <td class="specifications-table__item">Алюминий и серый</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код защиты от механических ударов:</td>
+                                        <td class="specifications-table__item">IK08</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код защиты от влаги и пыли: </td>
+                                        <td class="specifications-table__item">IP65</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для бокового крепления:</td>
+                                        <td class="specifications-table__item">-</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для верхнего крепления: </td>
+                                        <td class="specifications-table__item">-</td>
+                                    </tr>
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Сертификация и применение</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак CE:  </td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак воспламеняемости: </td>
+                                        <td class="specifications-table__item">Для монтажа на обычно воспламеняющихся поверхностях</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция с информацией -->
+            <section class="product-information">
+                <div class="container">
+                    <h2 class="product-information__title">Информация о семействе продуктов</h2>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Описание</h2>
+                            <p class="product-information__item-descr">Ищете мощный и надежный прожектор для освещения на открытом воздухе? Не ищите дальше, чем прожектор Ledinaire высокой мощности! С выходом до 60,000 лм этот прожектор действительно впечатляет. Его высококачественная светодиодная технология обеспечивает исключительную энергоэффективность с эффективностью системы 120 лм/Вт. Прожектор Ledinaire высокой мощности также отличается впечатляющей долговечностью, с классом защиты Class I и рейтингом IP65. Его прочная конструкция и рейтинг IK08 делают его подходящим даже для самых жестких условий эксплуатации на открытом воздухе. Наш прожектор обеспечивает яркий и естественный свет, который улучшает внешний вид и атмосферу любого открытого пространства. А благодаря симметричному распределению света он идеально подходит для освещения фасадов зданий и территорий. Вы можете быть уверены, что ваша система освещения будет надежной и стабильной. Прожектор Ledinaire высокой мощности доступен в четырех различных размерах. </p>
+                            <p class="product-information__item-descr product-information__hide hide__element">С его наклонным универсальным креплением и предварительно собранным кабелем установка проходит быстро и легко. Так что обновите свою систему освещения на открытом воздухе уже сегодня с прожектором Ledinaire высокой мощности – идеальное сочетание мощности, эффективности и стиля.</p>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Преимущества</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Высокий световой поток: С выходом до 60,000 лм и допустимой погрешностью в +/-10%, этот прожектор обеспечивает мощное и надежное освещение для различных наружных применений.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Энергоэффективность: Светодиодная технология, используемая в этом прожекторе, обеспечивает исключительную энергоэффективность с эффективностью системы 120 лм/Вт и коэффициентом мощности >0.9. Это помогает вам экономить на счетах за электроэнергию, одновременно снижая углеродный след.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Долговечная конструкция: Корпус из алюминиевого литья под давлением и закаленное стекло делают этот прожектор прочным и долговечным, а класс защиты Class I и рейтинг IP65 гарантируют надежную работу даже в самых сложных погодных условиях.</h2>
+                                </li>                                                              
+                            </ul>
+                            <ul class="product-information__list product-information__hide hide__element">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Универсальное крепление: 360° поворотное U-образное крепление позволяет гибко и легко устанавливать прожектор, а предварительно собранное 1-метровое подключение питания упрощает настройку.</h2>
+                                </li>    
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Стильный дизайн: С его элегантным и современным дизайном, этот прожектор добавляет нотку изысканности в любое открытое пространство, а серый цвет RAL 7043 обеспечивает гармоничное сочетание с окружением.</h2>
+                                </li>       
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Широкий диапазон рабочих температур: Этот прожектор может выдерживать широкий спектр экологических условий, что делает его подходящим для использования в различных наружных условиях.</h2>
+                                </li>     
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Долгий срок службы: Прожектор Ledinaire высокой мощности предлагает исключительное соотношение цены и качества, а также спокойствие.</h2>
+                                </li>                                           
+                            </ul>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Функции</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Высокий световой поток: Выход до 60,000 лм с допустимой погрешностью в +/-10%.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Энергоэффективная LED-технология: Эффективность системы составляет 120 лм/Вт, а коэффициент мощности >0.9.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Долговечная конструкция: Корпус из алюминиевого литья под давлением и закаленное стекло с классом защиты Class I и рейтингом IP65.</h2>
+                                </li>                                                              
+                            </ul>
+                            <ul class="product-information__list product-information__hide hide__element">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Универсальное крепление: 360° поворотное U-образное крепление для гибкой и простой установки.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Стильный дизайн: Серый цвет RAL 7043, который гармонично вписывается в окружающую атмосферу.</h2>
+                                </li>    
+                                
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Широкий диапазон рабочих температур: От -25°C до +40°C.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Долгий срок службы: До 50,000 часов (L70B50 при 25°C) и 3-летняя гарантия.</h2>
+                                </li> 
+                            </ul>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Приложения</h2>
+                            <p class="product-information__item-descr">Применения прожекторов Ledinaire высокой мощности: мосты, памятники, фасады, арены и спортивные площадки, ландшафт, фасады зданий, торговые точки, сады, подземные переходы, рекламные щиты, открытые пространства, парковки, фасады магазинов, окружение складов, малые спортивные площадки, многофункциональные спортивные сооружения.</p>                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="footer__contacts-link">mail@mail.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/open-more.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    

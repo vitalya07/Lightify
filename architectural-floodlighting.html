@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Архитектурная заливающая подсветка</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" max="20">
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон">
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="#" class="header__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="header__contacts-link">mail@mail.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="architectural-floodlighting products">
+                <div class="container">
+                    <h1 class="architectural-floodlighting-title products__title title">Архитектурная заливающая подсветка</h1>
+                    <p class="architectural-floodlighting-descr products__descr descr">Philips предлагает широкий ассортимент стильных и энергоэффективных архитектурных прожекторов. Создавайте акцентное освещение зданий с помощью наших решений для архитектурной заливающей подсветки, в том числе точечных и встраиваемых в грунт светильников, а также светодиодных лент с поверхностным монтажом.</p>
+                    <div class="architectural-floodlighting__grid products__grid">
+                        <!-- 1 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-1.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="Uni Wall Mount Recessed">Настенный встраиваемый светильник Uni</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="Uni Wall Mount Recessed">Купить</button>
+                                <a href="uni-Wall-Mount-Recessed.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-2.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="UniDot G2">UniDot G2</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="UniDot G2">Купить</button>
+                                <a href="uniDot-G2.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-3.jpg" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="Uni Wall Sconce">Uni Wall Sconce</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="Uni Wall Sconce">Купить</button>
+                                <a href="uni-Wall-Sconce.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-4.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="UniString">UniString</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="UniString">Купить</button>
+                                <a href="uniString.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-5.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="UniEdge">UniEdge</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="UniEdge">Купить</button>
+                                <a href="UniEdge.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-6.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="UniFlood M G2">UniFlood M G2</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="UniFlood M G2">Купить</button>
+                                <a href="uniFlood-MG2.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="architectural-floodlighting__item products__item">
+                            <div class="architectural-floodlighting__item-img products__item-img">
+                                <img src="assets/img/architecture-floading/af-7.webp" alt="фото">
+                            </div>
+                            <h2 class="architectural-floodlighting__item-title products__item-title" data-name="UniFlood C Pro">UniFlood C Pro</h2>
+                            <div class="architectural-floodlighting__item-buttons products__item-buttons">
+                                <button class="architectural-floodlighting__item-btn products__item-btn" id="btn-cart" data-product-name="UniFlood C Pro">Купить</button>
+                                <a href="uniFlood-C-Pro.html" class="architectural-floodlighting__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="footer__contacts-link">mail@mail.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/mask.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Солнечное освещение</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" max="20" required>
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="#" class="header__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="header__contacts-link">mail@mail.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="urban products">
+                <div class="container">
+                    <h1 class="urban-title products__title title">Солнечное освещение</h1>
+                    <p class="urban-descr products__descr descr">Достигните своих целей в области устойчивого развития с помощью наших инновационных решений для освещения на солнечной энергии. Наша линейка простых в установке осветительных приборов на солнечной энергии включает в себя солнечные светильники, солнечные панели и подсистемы солнечных батарей, которые были разработаны с учетом производительности и энергоэффективности.</p>
+                    <div class="urban__grid products__grid">
+                        <!-- 1 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/solar/solar-img-1.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="SunStay Pro gen2">SunStay Pro gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn" id="btn-cart" data-product-name="SunStay Pro gen2">Купить</button>
+                                <a href="sunStay-Pro-gen2.html" class="urban__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/solar/solar-img-2.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Luma gen2 Solar">Luma gen2 Solar</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn" id="btn-cart" data-product-name="Luma gen2 Solar">Купить</button>
+                                <a href="Luma-gen2-Solar.html" class="urban__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/solar/solar-img-3.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="LumiStreet gen2 Solar">LumiStreet gen2 Solar</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn" id="btn-cart" data-product-name="LumiStreet gen2 Solar">Купить</button>
+                                <a href="lumiStreet-gen2-Solar.html" class="urban__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/solar/solar-img-4.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="ComboCC Gen 4.0">ComboCC Gen 4.0</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn" id="btn-cart" data-product-name="ComboCC Gen 4.0">Купить</button>
+                                <a href="ComboCC-Gen4.html" class="urban__item-btn products__item-btn" id="btn__link">Подробнее</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="footer__contacts-link">mail@mail.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/mask.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    

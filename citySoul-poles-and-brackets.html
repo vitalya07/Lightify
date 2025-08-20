@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>CitySoul poles and brackets</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input">
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input">
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance performance-hide">
+            <div class="performance__dialog">
+                <div class="performance__content">
+                    <div class="performance__head">
+                        <h2 class="performance__title">Характеристики продукта</h2>
+                        <p class="performance__descr">Найти подходящие светильники для различных планов, потребностей и бюджетов легко благодаря обширному портфолио Philips. Оно гарантирует, что у вас всегда будет качественное решение по желаемой цене.</p>
+                        <div class="performance__close"></div>
+                    </div>
+                    <div class="performance__wrapper">
+                        <!-- 1 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Ценность</h3>
+                            <div class="performance__item-content">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Основной ассортимент надежных продуктов</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">50,000 L80</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Эффективность</h3>
+                            <div class="performance__item-content green">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L70</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                         <!-- 3 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Спецификация</h3>
+                            <div class="performance__item-content blue">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L90</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="#" class="header__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="header__contacts-link">mail@mail.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="head">
+                <div class="container">
+                    <h1 class="head__title title">CitySoul poles and brackets</h1>
+                    <p class="head__descr descr">CitySoul gen2 – универсальная идентичность.</p>
+                    <div class="head__wrapper">
+                        <button class="head__spec">
+                            <h5 class="head__spec-text">Спецификация</h5>                          
+                            <img src="assets/icons/alert.svg" alt="Предупреждение" loading="lazy" class="head__spec-img">                            
+                        </button>
+                        <div class="head__img">
+                            <img src="assets/icons/led.webp" alt="led" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-slider">
+                <div class="container">
+                    <div class="product-slider__wrapper">
+                        <div class="product-slider__slider">                            
+                            <div class="splide product-slider__slider-big" id="main-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/citySoul-poles-and-brackets/CitySoul_poles_and_brackets-BP-slide01.webp" data-caption="CitySoul_poles_and_brackets-BP">
+                                                    <img src="assets/img/citySoul-poles-and-brackets/CitySoul_poles_and_brackets-BP-slide01.webp" alt="OptiSpace-BCB500-BSP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/citySoul-poles-and-brackets/CitySoulgen2_Bracket_ACCENT-slide02.webp" data-caption="CitySoulgen2_Bracket_ACCENT">
+                                                    <img src="assets/img/citySoul-poles-and-brackets/CitySoulgen2_Bracket_ACCENT-slide02.webp" alt="CitySoulgen2_Bracket_ACCENT" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>                                                                   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="splide" id="thumbnail-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="assets/img/citySoul-poles-and-brackets/CitySoul_poles_and_brackets-BP-slide01.webp" alt="CitySoul_poles_and_brackets-BP" loading="lazy">
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <img src="assets/img/citySoul-poles-and-brackets/CitySoulgen2_Bracket_ACCENT-slide02.webp" alt="CitySoulgen2_Bracket_ACCENT" loading="lazy">
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider__specifications">
+                            <table class="product-slider__specifications-table specifications-table">
+                                <thead class="specifications-table__header">
+                                    <tr class="specifications-table__head">
+                                        <th>Основная информация</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="specifications-table__content">
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Данные: </td>
+                                        <td class="specifications-table__item">отсутствуют</td>
+                                    </tr>       
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция с информацией -->
+            <section class="product-information">
+                <div class="container">
+                    <h2 class="product-information__title">Информация о семействе продуктов</h2>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Описание</h2>
+                            <p class="product-information__item-descr">CitySoul gen2 — это одна из самых универсальных и вдохновляющих семей уличного освещения, разработанных компанией Philips на сегодняшний день. Этот высокоэффективный ассортимент обеспечивает отличные уровни освещения, создавая при этом подходящую атмосферу для всех городских зон применения — от окраин города до его центра. Эволюция модульности семейства CitySoul и добавление новых инноваций, таких как кронштейн Lyre и Accent, сделали эту серию идеальным инструментом для любого городского контекста. </p>
+                            <p class="product-information__item-descr product-information__hide hide__element">Дизайн стал более плоским, полностью круглым, а переходы между патрубком и кронштейном теперь полностью ровные, что придает вашему городскому пейзажу целостную, элегантную и ненавязчивую идентичность. Разработанный вокруг своего светодиодного двигателя, CitySoul gen2 отличается высокой эффективностью и легкостью в обслуживании. Он доступен в двух размерах и подходит для бокового крепления, установки на столбах, подвесного и натяжного монтажа.</p>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Преимущества</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Интегрированная система освещения UrbanStyling, разработанная для различных городских приложений.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Светильники, кронштейны и столбы спроектированы как единое целое, что обеспечивает согласованность.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Будущее гарантировано благодаря отличным характеристикам освещения и качеству продукции.</h2>
+                                </li>                                                              
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Функции</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Широкий ассортимент элегантных, специализированных и полных комплектов, включая столбы и кронштейны, наклонные варианты, двойные установки на столбах и версии для канатного освещения.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Разнообразные функции для обеспечения наиболее эффективного и комфортного уровня освещения.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Совместимость со всеми стандартными и продвинутыми системами управления освещением Philips.</h2>
+                                </li>                                                              
+                            </ul>  
+                            <ul class="product-information__list product-information__hide hide__element">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Легкое обслуживание на месте.</h2>
+                                </li>      
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Совместимость с существующими столбами и кронштейнами CitySoul: Flip, Morph, Jump, Sweep.</h2>
+                                </li>                          
+                            </ul>  
+                            <button class="product-information__item-next">Читать далее</button>                     
+                        </div>
+
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Приложения</h2>
+                            <p class="product-information__item-descr">Центры городов, парки и площади, дороги и улицы, коммерческие районы.</p>                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="footer__contacts-link">mail@mail.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/open-more.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    

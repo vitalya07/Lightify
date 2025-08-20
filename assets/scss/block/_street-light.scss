@@ -1,0 +1,35 @@
+.street-lights {
+    padding: 48px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 40px;
+    }
+    &__item {
+        border: 1px solid $grayColor;
+        height: 250px;
+        padding: 16px;
+        overflow: hidden;
+        transition: all .4s ease;
+        &-img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            & > img {
+                object-fit: cover;
+            }            
+        }
+        &-title {
+            font-family: 'NeueFrutigerWorld-Bold', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: $textColorBlack;
+        }
+        &:hover {
+            box-shadow: 0 0 10px $grayColor;
+        }
+    }
+}

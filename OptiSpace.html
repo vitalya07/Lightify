@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>OptiSpace</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input">
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input">
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance performance-hide">
+            <div class="performance__dialog">
+                <div class="performance__content">
+                    <div class="performance__head">
+                        <h2 class="performance__title">Характеристики продукта</h2>
+                        <p class="performance__descr">Найти подходящие светильники для различных планов, потребностей и бюджетов легко благодаря обширному портфолио Philips. Оно гарантирует, что у вас всегда будет качественное решение по желаемой цене.</p>
+                        <div class="performance__close"></div>
+                    </div>
+                    <div class="performance__wrapper">
+                        <!-- 1 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Ценность</h3>
+                            <div class="performance__item-content">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Основной ассортимент надежных продуктов</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">50,000 L80</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Эффективность</h3>
+                            <div class="performance__item-content green">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L70</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                         <!-- 3 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Спецификация</h3>
+                            <div class="performance__item-content blue">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L90</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="#" class="header__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="header__contacts-link">mail@mail.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="head">
+                <div class="container">
+                    <h1 class="head__title title">OptiSpace</h1>
+                    <p class="head__descr descr">Создание привлекательных ландшафтов в городской среде.</p>
+                    <div class="head__wrapper">
+                        <button class="head__spec">
+                            <h5 class="head__spec-text">Спецификация</h5>                          
+                            <img src="assets/icons/alert.svg" alt="Предупреждение" loading="lazy" class="head__spec-img">                            
+                        </button>
+                        <div class="head__img">
+                            <img src="assets/icons/led.webp" alt="led" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-slider">
+                <div class="container">
+                    <div class="product-slider__wrapper">
+                        <div class="product-slider__slider">                            
+                            <div class="splide product-slider__slider-big" id="main-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500-BSP-slide01.webp" data-caption="OptiSpace-BCB500-BSP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500-BSP-slide01.webp" alt="OptiSpace-BCB500-BSP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -5DPP-slide02.jpg" data-caption="OptiSpace-BCB500 -5DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -5DPP-slide02.jpg" alt="OptiSpace-BCB500 -5DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -7DPP-slide03.jpg" data-caption="OptiSpace-BCB500 -7DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -7DPP-slide03.jpg" alt="OptiSpace-BCB500 -7DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -8DPP-slide04.webp" data-caption="OptiSpace-BCB500 -8DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -8DPP-slide04.webp" alt="OptiSpace-BCB500 -8DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -9DPP-slide05.webp" data-caption="OptiSpace-BCB500 -9DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -9DPP-slide05.webp" alt="OptiSpace-BCB500 -9DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -4DP-slide06P.webp" data-caption="OptiSpace-BCB500 -4DP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -4DP-slide06P.webp" alt="OptiSpace-BCB500 -4DP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -3DPP-slide07.webp" data-caption="OptiSpace-BCB500 -3DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -3DPP-slide07.webp" alt="OptiSpace-BCB500 -3DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -3DPP-slide07.webp" data-caption="OptiSpace-BCB500 -3DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -3DPP-slide07.webp" alt="OptiSpace-BCB500 -3DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -1DPP-slide08.webp" data-caption="OptiSpace-BCB500 -1DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -1DPP-slide08.webp" alt="OptiSpace-BCB500 -1DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -2DPP-slide09.jpg" data-caption="OptiSpace-BCB500 -2DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -2DPP-slide09.jpg" alt="OptiSpace-BCB500 -2DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -6DPP-slide010.webp" data-caption="OptiSpace-BCB500 -6DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -6DPP-slide010.webp" alt="OptiSpace-BCB500 -6DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/OptiSpace/OptiSpace-BCB500 -10DPP-slide011.webp" data-caption="OptiSpace-BCB500 -10DPP">
+                                                    <img src="assets/img/OptiSpace/OptiSpace-BCB500 -10DPP-slide011.webp" alt="OptiSpace-BCB500 -10DPP" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>                                                                   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="splide" id="thumbnail-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500-BSP-slide01.webp" alt="OptiSpace-BCB500-BSP" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -5DPP-slide02.jpg" alt="OptiSpace-BCB500 -5DPP" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -7DPP-slide03.jpg" alt="OptiSpace-BCB500 -7DPP-" loading="lazy">
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -8DPP-slide04.webp" alt="OptiSpace-BCB500 -8DPP-" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -9DPP-slide05.webp" alt="OptiSpace-BCB500 -9DPP-" loading="lazy">
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -4DP-slide06P.webp" alt="OptiSpace-BCB500 -4DP" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -3DPP-slide07.webp" alt="OptiSpace-BCB500 -3DPP" loading="lazy">
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -1DPP-slide08.webp" alt="OptiSpace-BCB500 -1DPP" loading="lazy">
+                                        </li>     
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -2DPP-slide09.jpg" alt="OptiSpace-BCB500 -2DPP" loading="lazy">
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -6DPP-slide010.webp" alt="OptiSpace-BCB500 -6DPP" loading="lazy">
+                                        </li>   
+                                        <li class="splide__slide">
+                                            <img src="assets/img/OptiSpace/OptiSpace-BCB500 -10DPP-slide011.webp" alt="OptiSpace-BCB500 -10DPP" loading="lazy">
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider__specifications">
+                            <table class="product-slider__specifications-table specifications-table">
+                                <thead class="specifications-table__header">
+                                    <tr class="specifications-table__head">
+                                        <th>Основная информация</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="specifications-table__content">
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Драйвер в комплекте: </td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>       
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Источник света заменяемый: </td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Количество блоков питания: </td>
+                                        <td class="specifications-table__item">Устройство</td>
+                                    </tr>  
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тег обслуживания: </td>
+                                        <td class="specifications-table__item"> Да</td>
+                                    </tr>  
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>   
+                                    
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Технические характеристики света</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет источника света:  </td>
+                                        <td class="specifications-table__item">740 нейтральный белый</td>
+                                    </tr> 
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Коррелированная цветовая температура (номинальная): </td>
+                                        <td class="specifications-table__item">4000 K</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Индекс цветопередачи (CRI):  </td>
+                                        <td class="specifications-table__item">70</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Коэффициент светового потока вверх: </td>
+                                        <td class="specifications-table__item">0</td>
+                                    </tr>   
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>   
+                                    
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Работа и электрические характеристики</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Защита от перенапряжений (общая/дифференциальная):</td>
+                                        <td class="specifications-table__item">Уровень защиты светильника от перенапряжений: до 6 кВ в дифференциальном режиме и 6 кВ в общем режиме</td>
+                                    </tr>    
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr> 
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Управление и диммирование</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Диммируемый: </td>
+                                        <td class="specifications-table__item">Нет</td>
+                                    </tr>  
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Механические характеристики и корпус</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тип оптического покрытия: </td>
+                                        <td class="specifications-table__item">Поликарбонатное покрытие с высокой отражающей способностью</td>
+                                    </tr>  
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет корпуса: </td>
+                                        <td class="specifications-table__item">Черный</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Класс механической защиты: </td>
+                                        <td class="specifications-table__item">IK10</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Класс защиты от влаги: </td>
+                                        <td class="specifications-table__item">IP66</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для бокового крепления:  </td>
+                                        <td class="specifications-table__item">0°</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для верхнего крепления:</td>
+                                        <td class="specifications-table__item">0°</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr> 
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Одобрение и применение</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак CE: </td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr> 
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак горючести: </td>
+                                        <td class="specifications-table__item">Для монтажа на обычно горючих поверхностях</td>
+                                    </tr> 
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr> 
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Долговременная производительность (в соответствии с IEC)</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Уровень отказов драйвера через 5,000 часов:</td>
+                                        <td class="specifications-table__item">0.5 %</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Данные о продукте</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код семейства продукта: </td>
+                                        <td class="specifications-table__item">BCB500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция с информацией -->
+            <section class="product-information">
+                <div class="container">
+                    <h2 class="product-information__title">Информация о семействе продуктов</h2>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Описание</h2>
+                            <p class="product-information__item-descr">OptiSpace — это креативное решение в виде болларда, которое позволяет создать более привлекательное и ориентированное на граждан пространство в городской среде, избегая вертикализации городского ландшафта. OptiSpace предлагает все это и даже больше, обеспечивая привлекательные общие затраты на владение для ваших инвестиций. Благодаря различным вариантам управления вы можете снизить потребление энергии и дополнительно минимизировать общие затраты на владение. </p>
+                            <p class="product-information__item-descr product-information__hide hide__element">Благодаря отличным и оптимизированным вариантам распределения света вы можете максимизировать расстояние между боллардами, тем самым уменьшая количество световых точек, которые необходимо установить. Для поддержки различных дизайнерских решений OptiSpace также доступен в разных цветах: стандартный цвет — ультраматовый серый, другие цвета доступны по запросу.</p>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Преимущества</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Дискретный дизайн, гармонично вписывающийся в современные городские пространства.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Привлекательные общие затраты на владение.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Соответствует ключевым национальным и международным стандартам в Европе.</h2>
+                                </li>                                                              
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Функции</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Обеспечивает широкое расстояние между боллардами, до 20 метров.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Обеспечивает световой поток до 4,300 лм.</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Классы защиты IP66 и IK10.</h2>
+                                </li>                                                              
+                            </ul>  
+                            <ul class="product-information__list product-information__hide hide__element">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Опции цветовой температуры: теплый белый (WW) / нейтральный белый (NW).</h2>
+                                </li>      
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Выбор между асимметричной и симметричной оптикой.</h2>
+                                </li>   
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Аксессуары для наземной секции.</h2>
+                                </li>                            
+                            </ul>  
+                            <button class="product-information__item-next">Читать далее</button>                     
+                        </div>
+
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Приложения</h2>
+                            <p class="product-information__item-descr">Парки и площади, пешеходные и велосипедные дорожки, фасады зданий и парковки.</p>                            
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Продукты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__contacts-link">8(888)-888-8888</a>
+                        <a href="#" class="footer__contacts-link">mail@mail.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/open-more.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    

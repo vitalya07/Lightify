@@ -1,0 +1,89 @@
+.container {
+    max-width: 1480px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.body__container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.show__menu {
+    .header__nav {
+        right: 0;
+    }
+    .hamburger {
+        & > span {
+            &:first-child {
+                top: 50%;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+.title {
+    font-family: 'NeueFrutigerWorld-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    margin-bottom: 100px;
+    color: $textColorBlack;
+}
+.descr {
+    max-width: 1300px;
+    font-family: 'NeueFrutigerWorld-Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: $textColorBlack;
+    margin-bottom: 46px;
+}
+.modal-show {
+    visibility: visible;
+    opacity: 1;
+    .modal__dialog {
+        transform: scale(1);
+    }
+}
+.modal-hide {
+    visibility: hidden;
+    opacity: 0;
+    .modal__dialog {
+        transform: scale(0);
+    }
+}
+.performance-show {
+    visibility: visible;
+    opacity: 1;
+    .performance__dialog {
+        transform: scale(1);
+    }
+}
+.performance-hide {
+    visibility: hidden;
+    opacity: 0;
+    .performance__dialog {
+        transform: scale(0);
+    }
+}
+.product-information__hide {
+    display: none;
+}
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border-bottom: 3px solid $mainColor;
+    margin-bottom: 5px;
+}
+.splide__pagination__page .is-active{
+    background-color: $mainColor !important;
+}
+.video__min {
+    margin-right: 10px;
+    width: 104px;
+    height: 58px;
+}
