@@ -14,7 +14,7 @@ function postData(url = '', data = {}) {
     });
 }
 
-const buyButtons = document.querySelectorAll('.products__item-btn'); 
+const buyButtons = document.querySelectorAll('.btn-cart'); 
 const modalWindow = document.querySelector('.modal'); 
 const productModalTitle = modalWindow.querySelector('.modal__title'); 
 const forms = document.querySelectorAll('.modal__form'); 
@@ -69,7 +69,7 @@ forms.forEach(form => {
         });
 
 
-        const activeButton = document.querySelector('.products__item-btn.active');
+        const activeButton = document.querySelector('.btn-cart.active');
         if (activeButton) {
             const productName = activeButton.getAttribute('data-product-name');
             object['product-name'] = productName;

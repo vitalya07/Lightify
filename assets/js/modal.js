@@ -1,7 +1,7 @@
      
 const modal = document.querySelector('.modal'),
       modalTitle = modal.querySelector('.modal__title'),
-      btnCart = document.querySelectorAll('#btn-cart'); 
+      btnCart = document.querySelectorAll('.btn-cart'); 
 
 if (modal || btnCart) {
     function showModal(title) {
