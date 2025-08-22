@@ -9,15 +9,24 @@ $json = file_get_contents('php://input'); // Получение json строк�
 $data = json_decode($json, true); // Преобразование json
 
 // Данные
-$name = $data['your-name'];
-$tel = $data['your-tel'];
-$productName = $data['product-name']; // Получаем название продукта
+$name = $data['your-name'] ?? null; // Используем null coalescing для безопасности
+$tel = $data['your-tel'] ?? null;
+$productName = $data['product-name'] ?? null; // Получаем название продукта
+
+// Проверка на наличие необходимых данных
+if (empty($name) || empty($tel)) {
+    echo json_encode(['error' => 'Не все данные были переданы']);
+    exit;
+}
 
 // Контент письма
 $title = 'Заявка с сайта'; // Название письма
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
-        '<p>Телефон: <strong>'.$tel.'</strong></p>'.
-        '<p>Продукт: <strong>'.$productName.'</strong></p>'; // Добавляем название продукта в тело письма
+        '<p>Телефон: <strong>'.$tel.'</strong></p>';
+
+if (!empty($productName)) {
+    $body .= '<p>Продукт: <strong>'.$productName.'</strong></p>'; // Добавляем название продукта, если оно есть
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
