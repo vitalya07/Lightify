@@ -28,16 +28,16 @@ try {
     $mail->SMTPAuth   = true;
 
     // Настройки почты отправителя
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'saifutdinov_vitalii@mail.ru'; // Логин на почте
-    $mail->Password   = '1Y0EjHAQ82YzVCBtfb1G'; // Пароль на почте
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'danilchenkovitalya@yandex.ru'; // Логин на почте
+    $mail->Password   = 'qgkweieduaqollhd'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
-    $mail->setFrom('saifutdinov_vitalii@mail.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('danilchenkovitalya@yandex.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('saifutdinov_vitalii@mail.ru');
+    $mail->addAddress('danilchenkovitalya@yandex.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);
