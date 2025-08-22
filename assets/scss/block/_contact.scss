@@ -1,0 +1,32 @@
+.contact {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        &-feedback {
+            color: $textColorBlack;
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        font-size: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__container {
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+}
