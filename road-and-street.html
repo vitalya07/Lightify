@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ознакомьтесь с ассортиментом решений Philips для дорожного и уличного освещения. Стильные и энергоэффективные светильники для различных целей.">
     <title>Дорожное и уличное освещение</title>
     <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
     <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
@@ -11,6 +12,7 @@
 </head>
 <body>
     <div class="body__container">
+        <!-- Модальные окна -->
         <div class="modal__error modal-hide">
             <div class="modal__error-dialog">
                 <div class="modal__error-content modal__content">
@@ -35,23 +37,25 @@
                     <div class="modal__container">
                         <form class="modal__form">
                             <div>
-                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" max="20" required>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" maxlength="20" required>
                             </div>
                             <div>
                                 <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон" required>
                             </div>
                             <button class="modal__btn" type="submit">Заказать</button>
                         </form>
-                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать", вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Заголовок -->
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
                     <a href="index.html" class="header__logo">
-                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта" class="header__logo-img">
                     </a>
                     <nav class="header__nav">
                         <ul class="header__nav-list">
@@ -70,15 +74,18 @@
                 </div>
             </div>
         </header>
+
+        <!-- Основное содержимое -->
         <main class="content">
             <section class="road-and-street products">
                 <div class="container">
                     <h1 class="road-and-street-title products__title title">Дорожное и уличное освещение</h1>
                     <p class="road-and-street-descr products__descr descr">Ознакомьтесь с ассортиментом решений Philips для дорожного и уличного освещения. Наша линейка экономичных дорожных фонарей и уличных светильников подходит для различных целей. Кроме того, она стильная и энергоэффективная.</p>
                     <div class="road-and-street__grid products__grid">
+                        <!-- Продукты -->
                         <div class="road-and-street__item products__item">
                             <div class="road-and-street__item-img products__item-img">
-                                <img src="assets/img/road-and-street/s1.webp" alt="фото">
+                                <img src="assets/img/road-and-street/s1.webp" alt="Luma gen2" loading="lazy">
                             </div>
                             <h2 class="road-and-street__item-title products__item-title" data-name="Luma gen2">Luma gen2</h2>
                             <div class="road-and-street__item-buttons products__item-buttons">
@@ -89,7 +96,7 @@
 
                         <div class="road-and-street__item products__item">
                             <div class="road-and-street__item-img products__item-img">
-                                <img src="assets/img/road-and-street/s2.webp" alt="фото">
+                                <img src="assets/img/road-and-street/s2.webp" alt="DigiStreet" loading="lazy">
                             </div>
                             <h2 class="road-and-street__item-title products__item-title" data-name="DigiStreet">DigiStreet</h2>
                             <div class="road-and-street__item-buttons products__item-buttons">
@@ -100,7 +107,7 @@
 
                         <div class="road-and-street__item products__item">
                             <div class="road-and-street__item-img products__item-img">
-                                <img src="assets/img/road-and-street/s3.webp" alt="фото">
+                                <img src="assets/img/road-and-street/s3.webp" alt="LumiStreet gen2" loading="lazy">
                             </div>
                             <h2 class="road-and-street__item-title products__item-title" data-name="LumiStreet gen2">LumiStreet gen2</h2>
                             <div class="road-and-street__item-buttons products__item-buttons">
@@ -111,7 +118,7 @@
 
                         <div class="road-and-street__item products__item">
                             <div class="road-and-street__item-img products__item-img">
-                                <img src="assets/img/road-and-street/s4.webp" alt="фото">
+                                <img src="assets/img/road-and-street/s4.webp" alt="ClearWay gen2" loading="lazy">
                             </div>
                             <h2 class="road-and-street__item-title products__item-title" data-name="ClearWay gen2">ClearWay gen2</h2>
                             <div class="road-and-street__item-buttons products__item-buttons">
@@ -122,7 +129,7 @@
 
                         <div class="road-and-street__item products__item">
                             <div class="road-and-street__item-img products__item-img">
-                                <img src="assets/img/road-and-street/s5.webp" alt="фото">
+                                <img src="assets/img/road-and-street/s5.webp" alt="Iridium gen4" loading="lazy">
                             </div>
                             <h2 class="road-and-street__item-title products__item-title" data-name="Iridium gen4">Iridium gen4</h2>
                             <div class="road-and-street__item-buttons products__item-buttons">
@@ -134,6 +141,8 @@
                 </div>
             </section>
         </main>
+
+        <!-- Подвал -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
@@ -151,16 +160,17 @@
                     <div class="footer__contacts">
                         <a href="tel:79087640930" class="footer__contacts-link">79087640930</a>
                         <a href="mailto:svetpribor@yandex.ru" class="footer__contacts-link">svetpribor@yandex.ru</a>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="footer__copy">© Все права защищены</div>
             </div>
         </footer>
     </div>
+
     <script src="assets/js/inputmask.min.js"></script>
     <script src="assets/js/mask.js"></script>
     <script src="assets/js/hamburger.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/form.js"></script>
 </body>
-</html>    
+</html>

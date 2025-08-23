@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>UrbanFlex</title>
+    <title>Свяжитесь с нами</title>
+    <meta name="description" content="Свяжитесь с UrbanFlex для получения информации о наших продуктах и услугах. Оставьте заявку, и мы свяжемся с вами.">
     <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
     <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
@@ -33,7 +34,7 @@
             <div class="container">
                 <div class="header__wrapper">
                     <a href="index.html" class="header__logo">
-                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                        <img src="assets/icons/logo.webp" alt="Логотип UrbanFlex" class="header__logo-img">
                     </a>
                     <nav class="header__nav">
                         <ul class="header__nav-list">
@@ -68,16 +69,16 @@
                     </div>
                     <h2 class="contact__subtitle title">Или оставьте заявку и мы свяжемся с вами</h2>
                     <div class="modal__container contact__container">
-                        <form class="modal__form">
+                        <form class="modal__form" method="post" action="submit_form.php">
                            <div>
-                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" max="20" required>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" maxlength="20" required>
                             </div>
                             <div>
                                 <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон" required>
                             </div>
                             <button class="modal__btn" type="submit">Заказать</button>
                         </form>
-                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать", вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a>.</p>
                     </div>
                 </div>
             </section>
@@ -86,7 +87,7 @@
             <div class="container">
                 <div class="footer__wrapper">
                     <a href="index.html" class="footer__logo">
-                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта UrbanFlex">
                     </a>
                     <nav class="footer__nav">
                         <ul class="footer__nav-list">
@@ -110,4 +111,4 @@
     <script src="assets/js/hamburger.js"></script>
     <script src="assets/js/form.js"></script>
 </body>
-</html>    
+</html>
